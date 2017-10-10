@@ -10,3 +10,7 @@ open connection to any client via console example: connection.send('string data'
 
 optional - build client bundle with (not working)
 npm run build
+
+
+# important peerjs server should be setup manually from
+https://github.com/peers/peerjs-server
