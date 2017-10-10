@@ -1,0 +1,12 @@
+run node webrtc instance with
+node server.js
+(opens peerjs webrtc named instance as id:''basic-peer-server'')
+
+serve client in browser with a basic python server:
+python -m SimpleHTTPServer
+
+open localhost:8000
+open connection to any client via console example: connection.send('string data')
+
+optional - build client bundle with (not working)
+npm run build

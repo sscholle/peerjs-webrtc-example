@@ -1,0 +1,26 @@
+{
+  "name": "peer-js-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify client.js -o dist/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "BlobBuilder": "^0.10.0",
+    "binary-pack": "^1.0.2",
+    "bufferutil": "^3.0.2",
+    "electron-webrtc": "^0.3.0",
+    "peer": "^0.2.8",
+    "peerjs": "^0.3.14",
+    "simple": "^0.2.0",
+    "simple-peer": "^8.1.1",
+    "utf-8-validate": "^3.0.3",
+    "wrtc": "0.0.62",
+    "ws": "^3.2.0",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
