@@ -1,5 +1,7 @@
 var peerjsConfig = require("./peerjsConfig.js");
 var clientName = 'node-client';
+
+// ugly hacks to get PeerJS to work in Node.js
 window = global
 window.BlobBuilder = require("BlobBuilder")
 location = {protocol: 'http'}
@@ -11,6 +13,13 @@ RTCSessionDescription = wrtc.RTCSessionDescription;
 RTCIceCandidate = wrtc.RTCIceCandidate;
 WebSocket = require('ws');
 require('./node_modules/peerjs/lib/exports.js');
+// end Ugly Hacks
+
+// hack for Node.js to overcome hardcoded Browser only code on PeerJs
+window.util.setZeroTimeout = function(fn) {
+  setTimeout(fn,0);
+}
+// end hack
 
 var peer = new Peer(clientName, peerjsConfig);
 
