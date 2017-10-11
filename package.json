@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "browserify node_modules/peerjs/dist/peer.min.js peerjsConfig.js -o dist/bundle.js",
+    "signaling": "node signaling.js",
+    "client": "node node-client.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
