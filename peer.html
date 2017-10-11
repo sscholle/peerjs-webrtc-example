@@ -3,11 +3,13 @@
 <head>
   <title>peer1</title>
   <script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
+  <script src="peerjsConfig.js"></script>
   <!-- <script src="dist/bundle.js"></script> -->
 </head>
 <body>
 <script>
-var peer = new Peer('basic-client-peer', {host: 'localhost', port: 9000, path: '/', debug: true});
+  var clientName = 'browser-client';
+  var peer = new Peer(clientName, peerjsConfig);
 
   //var peer = new Peer('basic-client-peer', {key: '2m6k58wu8kwt57b9', debug: true});
   //var peer = new SimplePeer('peer1-simple', {key: 'lwjd5qra8257b9', debug: true});
@@ -30,6 +32,6 @@ var peer = new Peer('basic-client-peer', {host: 'localhost', port: 9000, path: '
     });
   });
 </script>
-basic
+its in the code
 </body>
 </html>

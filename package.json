@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "browserify client.js -o dist/bundle.js",
+    "build": "browserify node_modules/peerjs/dist/peer.min.js peerjsConfig.js -o dist/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
